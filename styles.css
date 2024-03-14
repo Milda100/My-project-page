@@ -1,0 +1,178 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --color-beige: #ead0b4;
+    --color-brown: #5d5348;
+    --color-light-blue: #b4ceea;
+    --color-light-beige: #f8f0e8;
+    --color-medium-beige:#f4e7d9;
+    --color-white: white;
+  }
+
+
+.work-sans-body {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+    margin: 0;
+    color: var(--color-brown);
+  }
+
+#navbar {
+    overflow: hidden;
+    background-color: #ead0b4;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+#navbar a {
+    float: left;
+    color: var(--color-brown);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 200%;
+    font-weight: bold;
+  }
+
+  #navbar a:hover {
+    background-color: #b4ceea;
+    color: var(--color-white);
+    border-radius: 10%;
+  }
+
+#welcome-section {
+    width: auto;
+    height: auto;
+    background-color: var(--color-light-beige);
+    overflow: auto;
+   
+
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1 {
+    padding: 5% 10% 0% 10%;
+    font-size: 400%;
+}
+
+h2 {
+    padding: 0% 10% 3% 10%;
+    font-size: 200%;
+}
+
+p {
+    padding: 2% 25% 0% 25%;
+    font-size: 90%;
+}
+
+#projects {
+    width: auto;
+    height: auto;
+    background-color: var(--color-medium-beige);
+}
+
+h3 {
+    padding: 5% 10% 5% 10%;
+    font-size: 200%;
+}
+
+.project-grid {
+    display: grid;
+    grid: auto/ auto auto auto;
+}
+
+.project-img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+a {
+    text-decoration: none;
+    font-size: 100%;
+}
+
+.project-tile  {
+    text-align: center;
+    font-size: 150%;
+    padding: 5% 0 5% 0;
+
+}
+
+a:link {
+    color: var(--color-brown);
+  }
+
+  a:visited {
+    color: var(--color-brown);
+  }
+
+  a:hover {
+    color: var(--color-white);
+  }
+
+  #contact {
+    width: auto;
+    height: auto;
+    background-color: var(--color-light-beige);
+}
+
+#contact a {
+    color: var(--color-brown);
+    text-align: center;
+    padding: 14px 16px;
+    }
+
+  .contact-info {
+    font-size: 300%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+  }
+
+
+  #contact a:hover {
+    background-color: #b4ceea;
+    color: var(--color-white);
+    border-radius: 50%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    #navbar a {
+        font-size: 150%;
+    }
+    h1 {
+        font-size: 250%;
+    }
+
+    h2, h3 {
+        font-size: 150%;
+    }
+    .project-grid {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .contact-info {
+        font-size: 200%;
+        
+      }
+  }
